@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
+import {Canvas} from '@react-three/fiber'
 
 class App extends Component {
     render() {
 
         return (
-            <h1>Hello</h1>
+            <Canvas>
+            <pointLight position={[10, 10, 10]} />
+            <mesh>
+              <sphereGeometry />
+              <meshStandardMaterial color="hotpink" />
+            </mesh>
+            </Canvas>
         )
     }
 }
