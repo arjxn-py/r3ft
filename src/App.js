@@ -1,5 +1,7 @@
+import { Canvas } from '@react-three/fiber';
 import React, {Component} from 'react';
-import Basic from './component/Basic';
+// import BasicPattern from './component/BasicPattern';
+import MyAnimatedBox from './component/Animation';
 
 class App extends Component {
     render() {
@@ -7,7 +9,10 @@ class App extends Component {
         return (
             <>
             <h1>A R3F Tutorial</h1>
-            <Basic />
+            {/* <BasicPattern /> */}
+            <Canvas>
+            <MyAnimatedBox />
+            </Canvas>
             </>
         )
     }

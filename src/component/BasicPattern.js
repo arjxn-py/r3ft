@@ -8,12 +8,16 @@ function Box(props){
   const y = props.y;
   const z = props.z;
 
-  return <mesh position={[x,y,z]}>
-  <boxGeometry args={[1,1,1]}/>
-  <meshStandardMaterial color="yellow"/>
-</mesh>
+  return <>
+    <mesh position={[x,y,z]}>
+      <boxGeometry args={[1,1,1]}/>
+      <meshStandardMaterial color="yellow"/>
+    </mesh>
+  </>
 }
-const Basic = () => {
+
+
+const BasicPattern = () => {
   return (
     <>
     <Canvas style={{backgroundColor:'gray'}}>
@@ -60,4 +64,4 @@ const Basic = () => {
   )
 }
 
-export default Basic;
+export default BasicPattern;
