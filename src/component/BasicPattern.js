@@ -1,6 +1,6 @@
 import React from 'react';
 import {OrbitControls} from '@react-three/drei';
-import {useFrame} from '@react-three/fiber';
+// import {useFrame} from '@react-three/fiber';
 // import * as THREE from "three";
 
 function Box(props){
